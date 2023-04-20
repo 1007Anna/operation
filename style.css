@@ -1,0 +1,11 @@
+body {
+  background-color: darkgrey;
+}
+
+.numArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  margin: 200px 0;
+}/*# sourceMappingURL=style.css.map */
