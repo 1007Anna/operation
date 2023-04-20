@@ -10,24 +10,24 @@
 </head>
 <body>
 
-    <div class="area">
-        <div class="numArea input-group">
-            <input type="number" id="input01" class="me-3">
-            <p id="add">+</p>
-            <!-- <select name="" id="select" class="me-3">
-                <option id="add">+</option>
-                <option id="minus">-</option>
-                <option >*</option>
-                <option >/</option>
-            </select> -->
-            <input type="number" id="input02" class="me-3">
-            <p id="mark=" class="me-3">=</p>
-            <p id="result" class="me-3">result</p>
+    <div class="area input-group">
+        <p id="result" class="text-center mt-5">result</p>
+        <div class="text-center mt-5">
+            <input type="number" id="input01" class="me-3 border-light rounded border-0">
+            <select id="select" class="me-3 rounded border-0">
+                <option value="+" id="add">+</option>
+                <option value="-" id="minus">-</option>
+                <option value="x" id="times">x</option>
+                <option value="%" id="dividedBy">%</option>
+            </select>
+            <input type="number" id="input02" class="me-3 border-light rounded border-0">
         </div>
-        <div class="buttonArea d-flex justify-content-center">
-            <button id="button" class="btn btn-outline-dark">計算</button>
+        <div class="buttonArea d-flex justify-content-center mt-5">
+            <button id="button" class="btn btn-outline-secondary">計算</button>
         </div>
+        
     </div>
+    
     
 
     <script src="./operation.js"></script>

@@ -1,13 +1,35 @@
 body {
-    background-color: darkgrey;
-}
-
-.numArea {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
-    margin: 200px 0;
-    
+    background-color: rgb(244, 243, 230);
 }
+
+
+
+
+
+    .area {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(245, 223, 200);
+        margin: 200px 0 0 0;
+        height: 300px;
+        width: 600px;
+        border-radius: 10px;
+
+        .buttonArea {
+            height: 50px;
+        }
+
+        .btn {
+            height: 35px;
+            width: 100px;
+        }
+      
+    }
+    
+
+    
 
