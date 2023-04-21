@@ -8,26 +8,39 @@ const times = document.getElementById("times");
 const dividedBy = document.getElementById("dividedBy");
 const select = document.getElementById("select");
 
+
 btn.addEventListener("click",function(){
-    const num01 = +input01.value;
+
+    // parseInt()用於解析字符串並返回整數
+    const num01 = parseInt(input01.value);
     const num02 = +input02.value;
-    const addSum = num01 + num02;
     
-    // const minusSum = num01 - num02;
-    // const timesSum = num01 * num02;
-    // const dividedBySum = num01 / num02;
+    console.log("select 的 value");
+    console.log(select.value)
+    
+    
+    if(select.value == "+"){
+        const addSum = num01 + num02;
+        result.innerText = "計算結果：" + addSum;
+    }
 
+    if(select.value == "-"){
+        const minusSum = num01 - num02;
+        result.innerText = "計算結果：" + minusSum;
+    }
 
-    // input01.value = null;
-    // input02.value = null;
-    result.innerText = "計算結果：" + addSum;
-    // result.innerText = "計算結果：" + minusSum;
-    // result.innerText = "計算結果：" + timesSum;
-    // result.innerText = "計算結果：" + dividedBySum;
+    if(select.value == "x"){
+        const timesSum = num01 * num02;
+        result.innerText = "計算結果：" + timesSum;
+    }
+
+    if(select.value == "%"){
+        const dividedBySum = num01 / num02;
+        result.innerText = "計算結果：" + dividedBySum;
+    }
     
 
-    // console.log(typeof num01)
-    // console.log(typeof num02)
+  
     console.log(sum);
 
     
